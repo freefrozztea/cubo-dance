@@ -1,0 +1,348 @@
+body
+{
+  margin: 0;
+  background: #333;
+  display: flex;
+  min-height: 100vh;
+}
+
+.container{
+  margin: auto;
+  perspective: 2000px;
+  perspective-origin: 0px -1000px;
+}
+
+.cubo{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(60deg);
+  animation: cubo 5s infinite linear;
+}
+@keyframes cubo
+{
+  from
+  {
+	 transform: rotateY(0deg);
+  }
+  to
+  {
+	 transform: rotateY(360deg);
+  }
+}
+
+.face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#one
+{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #62f;
+  transform: translateZ(100px);
+}
+
+#one .content
+{
+  position: relative;
+  display: flex;
+  border-radius: 50%;
+  widht: 150px;
+  heigth: 150px;
+}
+#one .content span
+{
+  transform: translateY(0px);
+  animation: bubble 1.5s ease-in-out infinite;
+}
+@keyframes bubble
+{
+  0%
+  {
+    transform: translateY(0px);
+  }
+  20%
+  {
+    transform: translateY(-80px);
+    filter: hue-rotate(20deg)
+  }
+  50%
+  {
+    transform: translateY(80px);
+    filter: hue-rotate(80deg)
+  }
+}
+#one .content span:nth-child(1)
+{
+  position: relative;
+  border: 10px solid #f62b62;
+  border-radius: 50%;
+  animation-delay: 0.1s;
+}
+#one .content span:nth-child(2)
+{
+  position: relative;
+  border: 10px solid #f62b62;
+  border-radius: 50%;
+  animation-delay: 0.2s;
+}
+#one .content span:nth-child(3)
+{
+  position: relative;
+  border: 10px solid #f62b62;
+  border-radius: 50%;
+  animation-delay: 0.3s;
+}
+#one .content span:nth-child(4)
+{
+  position: relative;
+  border: 10px solid #f62b62;
+  border-radius: 50%;
+  animation-delay: 0.4s;
+}
+#one .content span:nth-child(5)
+{
+  position: relative;
+  border: 10px solid #f62b62;
+  border-radius: 50%;
+  animation-delay: 0.5s;
+}
+#two
+{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e26;
+  transform: translateX(100px) rotateY(90deg);
+}
+#two .content
+{
+  position: relative;
+  display: flex;
+  border-radius: 50%;
+  widht: 150px;
+  heigth: 150px;
+}
+#two .content span
+{
+  transform: translateY(0px);
+  animation: bubble 1.5s ease-in-out infinite;
+}
+#two .content span:nth-child(1)
+{
+  position: relative;
+  border: 10px solid #62f;
+  border-radius: 50%;
+  animation-delay: 0.1s;
+}
+#two .content span:nth-child(2)
+{
+  position: relative;
+  border: 10px solid #62f;
+  border-radius: 50%;
+  animation-delay: 0.2s;
+}
+#two .content span:nth-child(3)
+{
+  position: relative;
+  border: 10px solid #62f;
+  border-radius: 50%;
+  animation-delay: 0.3s;
+}
+#two .content span:nth-child(4)
+{
+  position: relative;
+  border: 10px solid #62f;
+  border-radius: 50%;
+  animation-delay: 0.4s;
+}
+#two .content span:nth-child(5)
+{
+  position: relative;
+  border: 10px solid #62f;
+  border-radius: 50%;
+  animation-delay: 0.5s;
+}
+#three
+{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2f9;
+  transform: translateZ(-100px);
+}
+#three .content
+{
+  position: relative;
+  display: flex;
+  border-radius: 50%;
+  widht: 150px;
+  heigth: 150px;
+}
+#three .content span
+{
+  transform: translateY(0px);
+  animation: bubble 1.5s ease-in-out infinite;
+}
+#three .content span:nth-child(1)
+{
+  position: relative;
+  border: 10px solid #62f;
+  border-radius: 50%;
+  animation-delay: 0.1s
+}
+#three .content span:nth-child(2)
+{
+  position: relative;
+  border: 10px solid #62f;
+  border-radius: 50%;
+  animation-delay: 0.2s;
+}
+#three .content span:nth-child(3)
+{
+  position: relative;
+  border: 10px solid #62f;
+  border-radius: 50%;
+  animation-delay: 0.3s;
+}
+#three .content span:nth-child(4)
+{
+  position: relative;
+  border: 10px solid #62f;
+  border-radius: 50%;
+  animation-delay: 0.4s;
+}
+#three .content span:nth-child(5)
+{
+  position: relative;
+  border: 10px solid #62f;
+  border-radius: 50%;
+  animation-delay: 0.5s;
+}
+#four
+{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6bf;
+  transform: translateX(-100px) rotateY(90deg);
+}
+#four .content
+{
+  position: relative;
+  display: flex;
+  border-radius: 50%;
+  widht: 150px;
+  heigth: 150px;
+}
+#four .content span
+{
+  transform: translateY(0px);
+  animation: bubble 1.5s ease-in-out infinite;
+}
+#four .content span:nth-child(1)
+{
+  position: relative;
+  border: 10px solid #f62b62;
+  border-radius: 50%;
+  animation-delay: 0.1s;
+}
+#four .content span:nth-child(2)
+{
+  position: relative;
+  border: 10px solid #f62b62;
+  border-radius: 50%;
+  animation-delay: 0.2s;
+}
+#four .content span:nth-child(3)
+{
+  position: relative;
+  border: 10px solid #f62b62;
+  border-radius: 50%;
+  animation-delay: 0.3s;
+}
+#four .content span:nth-child(4)
+{
+  position: relative;
+  border: 10px solid #f62b62;
+  border-radius: 50%;
+  animation-delay: 0.4s;
+}
+#four .content span:nth-child(5)
+{
+  position: relative;
+  border: 10px solid #f62b62;
+  border-radius: 50%;
+  animation-delay: 0.5s;
+}
+#five
+{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f44;
+  transform: translateY(-100px) rotateX(90deg);
+}
+#five .content
+{
+  position: relative;
+  display: flex;
+  border-radius: 50%;
+  widht: 150px;
+  heigth: 150px;
+}
+#five .content span
+{
+  transform: translateY(0px);
+  animation: bubble 1.5s ease-in-out infinite;
+}
+#five .content span:nth-child(1)
+{
+  position: relative;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  animation-delay: 0.1s;
+}
+#five .content span:nth-child(2)
+{
+  position: relative;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  animation-delay: 0.2s;
+}
+#five .content span:nth-child(3)
+{
+  position: relative;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  animation-delay: 0.3s;
+}
+#five .content span:nth-child(4)
+{
+  position: relative;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  animation-delay: 0.4s;
+}
+#five .content span:nth-child(5)
+{
+  position: relative;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  animation-delay: 0.5s;
+}
+#six
+{
+  background: #cf4;
+  transform: translateY(100px) rotateX(90deg);
+}
